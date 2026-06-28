@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: radial-gradient(circle at top, #1f2a44, #050816);
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-container {
+  width: 90%;
+  max-width: 650px;
+  text-align: center;
+  padding: 30px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.15);
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: #d7ddff;
+  margin-bottom: 25px;
+}
+
+.game-box {
+  height: 250px;
+  border-radius: 20px;
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.game-box:hover {
+  transform: scale(1.01);
+}
+
+.game-box p {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.waiting {
+  background: #394867;
+}
+
+.ready {
+  background: #22c55e;
+}
+
+.too-early {
+  background: #ef4444;
+}
+
+.finished {
+  background: #2563eb;
+}
+
+button {
+  font-size: 1.1rem;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  background: #facc15;
+  color: #111827;
+  font-weight: bold;
+}
+
+button:hover {
+  transform: scale(1.04);
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.stats {
+  margin-top: 20px;
+  font-size: 1.1rem;
+}
+
+.explanation-card {
+  margin-top: 20px;
+  padding: 18px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.explanation-card h2 {
+  margin-top: 0;
+  font-size: 1.3rem;
+}
+
+#rank,
+#animal,
+#lastTime,
+#bestTime {
+  font-weight: bold;
+  color: #facc15;
+}
+
+.instructions {
+  color: #cbd5e1;
+  margin-top: 20px;
+}

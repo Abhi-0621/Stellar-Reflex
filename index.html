@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stellar Reflex</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="game-container">
+    <h1>🚀 Stellar Reflex</h1>
+
+    <p class="subtitle">
+      Test your reaction time and compare your reflexes to animal-inspired speed rankings.
+    </p>
+
+    <div id="gameBox" class="game-box waiting">
+      <p id="message">Click Start to begin.</p>
+    </div>
+
+    <button id="startButton">Start Game</button>
+
+    <div class="stats">
+      <p>Last reaction time: <span id="lastTime">--</span></p>
+      <p>Best reaction time: <span id="bestTime">--</span></p>
+      <p>Rank: <span id="rank">--</span></p>
+      <p>Animal Match: <span id="animal">--</span></p>
+    </div>
+
+    <div class="explanation-card">
+      <h2>What does your score mean?</h2>
+      <p id="explanation">Play a round to see your reaction analysis.</p>
+    </div>
+
+    <p class="instructions">
+      Wait until the box turns green, then click as fast as possible. Do not click early!
+    </p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
